@@ -53,7 +53,7 @@ public class AR_Select_Anchor_Object : MonoBehaviour
             var planeManager = GetComponent<ARPlaneManager>();
             if (planeManager)
             {
-                if (originPlaced)
+                if (originPlaced && currentOrigin != null)
                 {
                     // GameObject placedObject = currentOrigin.gameObject;
                     // placedObject.transform.LookAt(hit.trackable.transform);
